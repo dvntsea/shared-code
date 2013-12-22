@@ -1,0 +1,15 @@
+Red Giant Light Curves
+-converted to .csv from .fits files using TOPCAT (NASA-used)
+-pulled 8 curves, can pull/convert more if necessary
+-to produce scatter plot, plot TIME (col 1) against SAP_FLUX (simple aperture photometry - info below)
+
+The light curve is produced using simple aperture photometry (SAP). 
+The light curve files contain two light curves. The SAP light curve is the flux in units 
+of electrons per second contained in the optimal aperture pixels collected by the spacecraft. 
+This light curve is the output of the PA module in the SOC pipeline. The PDCSAP light curve 
+is the flux contained in the optimal aperture in electrons per second after the PDC module 
+has applied its detrending algorithm to the PA light curve. 
+
+-for the eight light curves pulled, SAP_FLUX over time looked quite different for the different stars - 
+-some decreased linearly over time, while others were semi periodic
+-plots available in accompanying folder

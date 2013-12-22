@@ -1,0 +1,15 @@
+notes from correlation matrix of KOI data:
+-a lot is highly significant
+-a few stand out cases:
+	the most significant correlations are with Teff (temperature), log.g. (gravity of the planet)
+	r.R. and a.R. may generally be variables of interest:
+		r.R.: ratio of planet radius to stellar radius
+		a.R.: the distance between the planet and the star a mid-transit divided by the stellar radius
+	Age of object highly correlated with (correlation coefficients in paren, all p<.001):
+		 duration (-.1) - transit duration
+		 planet radius (-.06)
+		 Teq (-.14)- Equilibrium surface temperature of planet
+		 teff (-.59)- Stellar effective (photospheric) temperature in degrees K
+		 Stellar Radius (-.20)
+		 Stellar Mass (-.57)
+		
