@@ -1,0 +1,108 @@
+KEPLER_KOI
+Search results output columns:
+
+Kepler ID
+    Kepler ID identifying corresponding entry in the Kepler Input Catalog (or custom aperture number).
+    range: 757,076 to < 13 million
+
+Time of Transit Epoch
+    Time to first transit (BKJD = BJD-2454833.0). The offset corresponds to 12:00 on Jan 1, 2009 UTC. 
+	Note other tables have used an offset value of 2454900, so be careful when comparing entries with earlier data.
+    120.5 to 657.3
+
+Period
+    Average interval between transits based on a linear fit to all observed transits. 
+	For candidates with only one observed transit, the period is estimated from the duration and knowledge of the stellar radius; 
+	values are then rounded to the nearest integer and multiplied by -1.
+    0.29 to 201292
+
+Transit Depth
+    The fraction of stellar flux lost (in parts per million) at the minimum of the planetary transit. 
+	Transit depths are typically computed from a best-fit model produced by a Mandel-Agol (2002) model fit to 
+	a multi-quarter Kepler light curve, assuming a linear orbital ephemeris.
+    14 to 297000 ppm
+
+Duration
+    Transit duration, first contact to last contact. Contact times are typically computed from a best-fit model produced
+	 by a Mandel-Agol (2002) model fit to a multi-quarter Kepler light curve, assuming a linear orbital ephemeris.
+    0.35 to 60.03
+
+Ingress Duration
+    The time between first and second contact of the planetary transit. Contact times are typically computed from a best-fit
+	 model produced by a Mandel-Agol (2002) model fit to a multi-quarter Kepler light curve, assuming a linear orbital ephemeris.
+    all null
+
+Impact Parameter
+    The sky-projected distance between the center of the stellar disc and the center of the planet disc at conjunction, 
+	normalized by the stellar radius.
+    0 to 3.49
+
+Inclination
+    The angle between the plane of the sky (perpendicular to the line of sight) and the orbital plane of the planet candidate.
+    9.74 to 89.95
+
+Semi-major Axis
+    Semi-major axis for planet based on Kepler 3rd law.
+    0 to 63.9
+
+Eccentricity
+    Eccentricity.
+    all zeroes
+
+r/R
+    Ratio of planet radius to stellar radius
+    0.004 to 2.78
+
+a/R
+    The distance between the planet and the star at mid-transit divided by the stellar radius. For the case of zero orbital 
+	eccentricity, the distance at mid-transit is the semi-major axis of the planetary orbit.
+    0.2 to 31021
+
+Planet Radius
+    Planetary radius; in Earth radii=6378 km
+    0.32 to 294
+
+Teq
+    Equilibrium surface temperature of planet. The calculation of equilibrium temperature assumes i) thermodynamic equilibrium 
+	between the incident stellar flux and the radiated heat from the planet, ii) a Bond albedo (the fraction of total power 
+	incident upon the planet scattered back into space) of 0.3, iii) that the planet and star are blackbodies, and iv) that 
+	the heat is evenly distributed between the day and night sides of the planet.
+    31 to 9721
+
+Teff
+    Stellar effective (photospheric) temperature in degrees K
+    3240 to 27740
+
+log(g)
+    Log of stellar surface gravity in cm/s2
+    1.63 to 4.98
+
+Metallicity
+    stellar metallicity (dex). The base-10 logarithm of the Fe to H ratio at the surface of the star, normalized by the solar Fe to H ratio.
+    all null
+
+Stellar Radius
+    stellar photospheric radius (solar = 1)
+    0.27 to 25.7
+
+Stellar Mass
+    stellar Mass (solar = 1)
+    all null
+	
+Age
+    stellar Age
+    0 to 14
+
+
+Quarters
+    bit-map of quarters searched. A bit string indicating which quarters of Kepler data were searched for transit signatures. 
+	Reading from left to right, the bits indicate the quarters. A value of one for any bit means that the designated quarter 
+	was searched for transits, a value of zero means that quarter was not included in the transit search.
+    all null
+KOI count
+    Number of planet candidates identified in system
+    1 to 6
+
+Binary Discrimination
+    Binary discrimination odd-even depth significance. See NExSci data columns definitions page for more information.
+    0 to 158.4
